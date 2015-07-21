@@ -1,11 +1,11 @@
 options( digits = 16 )
 library( jsonlite )
-
+library( FAdist )
 
 mu = 0
 beta = 1
 x = c( -5, -2.5, 0, 2.5, 5 )
-y = dGumbel( x, mu,beta )
+y = dgumbel( x, beta, mu )
 
 cat( y, sep = ",\n" )
 
