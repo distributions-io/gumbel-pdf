@@ -1,6 +1,6 @@
 Probability Density Function
 ===
-[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![Dependencies][dependencies-image]][dependencies-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][codecov-image]][codecov-url] [![Dependencies][dependencies-image]][dependencies-url]
 
 > [Gumbel](https://en.wikipedia.org/wiki/Gumbel_distribution) distribution probability density function (PDF).
 
@@ -11,7 +11,7 @@ The [probability density function](https://en.wikipedia.org/wiki/Probability_den
 	<br>
 </div>
 
-where `mu` is the location parameter and `beta` is the scale parameter.
+where `mu` is the location parameter and `beta > 0` is the scale parameter.
 
 ## Installation
 
@@ -82,7 +82,7 @@ The function accepts the following `options`:
 *	__path__: [deepget](https://github.com/kgryte/utils-deep-get)/[deepset](https://github.com/kgryte/utils-deep-set) key path.
 *	__sep__: [deepget](https://github.com/kgryte/utils-deep-get)/[deepset](https://github.com/kgryte/utils-deep-set) key path separator. Default: `'.'`.
 
-A [Gumbel](https://en.wikipedia.org/wiki/Gumbel_distribution) distribution is a function of 2 parameter(s): `mu`(location parameter) and `beta`(scale parameter). By default, `mu` is equal to `0` and `beta` is equal to `1`. To adjust either parameter, set the corresponding option(s).
+A [Gumbel](https://en.wikipedia.org/wiki/Gumbel_distribution) distribution is a function of two parameters: `mu`(location parameter) and `beta > 0`(scale parameter). By default, `mu` is equal to `0` and `beta` is equal to `1`. To adjust either parameter, set the corresponding option.
 
 ``` javascript
 var x = [ 0, 0.5, 1, 1.5, 2, 2.5 ];
@@ -384,8 +384,8 @@ Copyright &copy; 2015. The [Compute.io](https://github.com/compute-io) Authors.
 [travis-image]: http://img.shields.io/travis/distributions-io/gumbel-pdf/master.svg
 [travis-url]: https://travis-ci.org/distributions-io/gumbel-pdf
 
-[coveralls-image]: https://img.shields.io/coveralls/distributions-io/gumbel-pdf/master.svg
-[coveralls-url]: https://coveralls.io/r/distributions-io/gumbel-pdf?branch=master
+[codecov-image]: https://img.shields.io/codecov/c/github/distributions-io/gumbel-pdf/master.svg
+[codecov-url]: https://codecov.io/github/distributions-io/gumbel-pdf?branch=master
 
 [dependencies-image]: http://img.shields.io/david/distributions-io/gumbel-pdf.svg
 [dependencies-url]: https://david-dm.org/distributions-io/gumbel-pdf
